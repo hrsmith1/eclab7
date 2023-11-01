@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Practice 3</title>
+</head>
+<body>
+    <h1> Practice 3 <h1>
+    <form>
+    <label for="pwd1">Enter Password:</label>
+    <input type="text" id="pwd1" value=" "><br>
+    <label for="pwd2">Re-enter Password:</label>
+    <input type="text" id="pwd2" value=" "><br>
+    <br>
+    <input type="submit" value="Submit" onclick="valPassword()">
+    </form> 
+</body>
+<script>
+    function valPassword() {
+    let pass1 = document.getElementById('pwd1').value;
+    let pass2 = document.getElementById('pwd2').value;
+    if (pass1.length < 8) {
+        alert("Your Passwords isn't 8 characters");
+    }else if (pass1 != pass2){
+        alert("Your Passwords Do Not Match");
+    }else{
+        alert("Your good");
+    }
+}
+</script>
+</html>
